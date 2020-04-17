@@ -10,10 +10,10 @@ namespace Billar
     /// <summary>
     /// Description of MainForm.
     /// </summary>
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         Usuario usuario;
-        public Form1()
+        public Login()
         {
             usuario = new Usuario();
             Conexion.crearConexionLocal();
