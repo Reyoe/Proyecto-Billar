@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class Form1 : Form
+    public partial class Inventario : Form
     {
-        public Form1()
+        public Inventario()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int f = 1;
         }
     }
 }
