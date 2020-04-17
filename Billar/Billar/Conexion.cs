@@ -14,16 +14,17 @@ namespace Billar
         static string usuario;
         static string password;
         static string bd;
-        //static string puerto;
+        static string puerto;
         static string cadenadeconexion = "";
 
         static public void crearConexionLocal()
         {
             servidor = "localhost";
-            usuario = "root@localhost";
+            usuario = "root";
             bd = "billar";
             password = "";
-            Conexion.cadenadeconexion = "server=" + servidor + "; user=" + usuario + "; password=" + password + "; database=" + bd + "; SslMode = none";
+            //puerto = "3306";
+            Conexion.cadenadeconexion = "server=" + servidor + "; user=" + usuario + "; password=" + password + "; database=" + bd  + "; SslMode = none";
         }
 
         static public void desconectar()
