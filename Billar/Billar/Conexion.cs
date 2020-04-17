@@ -20,8 +20,8 @@ namespace Billar
         static public void crearConexionLocal()
         {
             servidor = "localhost";
-            usuario = "root";
-            bd = "biblioteca";
+            usuario = "root@localhost";
+            bd = "billar";
             password = "";
             Conexion.cadenadeconexion = "server=" + servidor + "; user=" + usuario + "; password=" + password + "; database=" + bd + "; SslMode = none";
         }
