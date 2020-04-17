@@ -37,23 +37,22 @@
             // 
             // UserText
             // 
-            this.UserText.Location = new System.Drawing.Point(75, 234);
+            this.UserText.Location = new System.Drawing.Point(82, 225);
             this.UserText.Name = "UserText";
             this.UserText.Size = new System.Drawing.Size(100, 20);
             this.UserText.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 298);
+            this.textBox1.Location = new System.Drawing.Point(82, 293);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(89, 324);
+            this.pictureBox1.Location = new System.Drawing.Point(97, 97);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 68);
             this.pictureBox1.TabIndex = 2;
