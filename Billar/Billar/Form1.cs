@@ -17,7 +17,6 @@ namespace Billar
         {
             usuario = new Usuario();
             Conexion.crearConexionLocal();
-            
             //
             // The InitializeComponent() call is required for Windows Forms designer support.
             //
@@ -81,6 +80,7 @@ namespace Billar
 
             //usuario.GetUsuarioById()
         }
+
 
     }
 }
