@@ -84,7 +84,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(106, 505);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -114,7 +113,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(742, 417);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -126,7 +124,6 @@
             this.pictureBox5.Size = new System.Drawing.Size(120, 107);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // richTextBox1
             // 
@@ -139,7 +136,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(414, 56);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "Billar \"El Filipino\"";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
@@ -153,7 +149,6 @@
             this.richTextBox2.Size = new System.Drawing.Size(183, 37);
             this.richTextBox2.TabIndex = 6;
             this.richTextBox2.Text = "Menu Principal";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // button1
             // 
@@ -166,6 +161,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Usuario\r\n";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -214,7 +210,6 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox6
             // 
