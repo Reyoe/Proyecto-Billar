@@ -16,6 +16,13 @@ namespace Billar
             Conexion.query(query);
             return Conexion.query(query); ;
         }
+        public DataTable GetAllUsers(string id)
+        {
+            string query = "Select (Code,Username,Name) from user";
+            Console.WriteLine(query);
+            Conexion.query(query);
+            return Conexion.query(query);
+        }
         public DataTable GetUsuarioById(string id)
         {
             string query = "Select * from user where code='" + id + "'";
