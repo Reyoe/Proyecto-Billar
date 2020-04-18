@@ -37,6 +37,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Titulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAgregarUs = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -99,12 +102,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Titulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Titulo.Location = new System.Drawing.Point(152, 22);
+            this.Titulo.Location = new System.Drawing.Point(335, 38);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(201, 70);
             this.Titulo.TabIndex = 10;
             this.Titulo.Text = "aUsuario";
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Titulo.Click += new System.EventHandler(this.Titulo_Click);
             // 
             // dataGridView1
             // 
@@ -114,11 +118,44 @@
             this.dataGridView1.Size = new System.Drawing.Size(573, 293);
             this.dataGridView1.TabIndex = 12;
             // 
+            // btnAgregarUs
+            // 
+            this.btnAgregarUs.Location = new System.Drawing.Point(155, 180);
+            this.btnAgregarUs.Name = "btnAgregarUs";
+            this.btnAgregarUs.Size = new System.Drawing.Size(117, 23);
+            this.btnAgregarUs.TabIndex = 13;
+            this.btnAgregarUs.Text = "Agregar";
+            this.btnAgregarUs.UseVisualStyleBackColor = true;
+            this.btnAgregarUs.Click += new System.EventHandler(this.btnAgregarUs_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(598, 180);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(117, 23);
+            this.btnModificar.TabIndex = 15;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(382, 180);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(117, 23);
+            this.btnMostrar.TabIndex = 16;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
             // UsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnAgregarUs);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Titulo);
             this.Controls.Add(this.pictureBox5);
@@ -146,5 +183,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAgregarUs;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }
