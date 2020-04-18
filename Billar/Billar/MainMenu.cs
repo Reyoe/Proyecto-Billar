@@ -23,9 +23,12 @@ namespace Billar
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) => new UsuarioForm();
+
+        private void button6_Click(object sender, EventArgs e)
         {
-            UsuarioForm myUsuarioform = new UsuarioForm();
+            Mesas myMesa = new Mesas();
+            myMesa.ShowDialog();
         }
     }
 }
