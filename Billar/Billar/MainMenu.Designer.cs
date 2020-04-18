@@ -194,6 +194,8 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.DarkRed;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Location = new System.Drawing.Point(627, 345);
@@ -201,6 +203,7 @@
             this.button5.Size = new System.Drawing.Size(177, 92);
             this.button5.TabIndex = 11;
             this.button5.Text = "Cerrar sesión";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button5.UseVisualStyleBackColor = false;
             // 
             // pictureBox6
