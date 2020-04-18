@@ -15,8 +15,10 @@ namespace Billar
         public UsuarioForm()
         {
             InitializeComponent();
-            dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
+           dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
 
         }
+
+
     }
 }
