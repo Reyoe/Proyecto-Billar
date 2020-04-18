@@ -103,7 +103,7 @@
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(201, 70);
             this.Titulo.TabIndex = 10;
-            this.Titulo.Text = "Usuario";
+            this.Titulo.Text = "aUsuario";
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
