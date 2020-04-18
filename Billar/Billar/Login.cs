@@ -67,6 +67,7 @@ namespace Billar
                 Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString());
                 textUser.Clear();
                 textPassword.Clear();
+                //UsuarioForm myUsuarioForm = new UsuarioForm();
                 MainMenu menu = new MainMenu();
                 menu.ShowDialog();
 

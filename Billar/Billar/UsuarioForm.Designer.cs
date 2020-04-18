@@ -26,15 +26,16 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+      
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioForm));
-            this.Titulo = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Titulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -43,20 +44,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Titulo
-            // 
-            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Titulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Titulo.Location = new System.Drawing.Point(152, 22);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(201, 70);
-            this.Titulo.TabIndex = 10;
-            this.Titulo.Text = "Inventario";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
             // 
@@ -105,6 +92,20 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // Titulo
+            // 
+            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Titulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Titulo.Location = new System.Drawing.Point(152, 22);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Size = new System.Drawing.Size(201, 70);
+            this.Titulo.TabIndex = 10;
+            this.Titulo.Text = "Inventario";
+            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,13 +139,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
