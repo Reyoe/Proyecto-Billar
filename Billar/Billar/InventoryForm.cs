@@ -15,6 +15,7 @@ namespace Billar
         public InventoryForm()
         {
             InitializeComponent();
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM product");
         }
     }
 }
