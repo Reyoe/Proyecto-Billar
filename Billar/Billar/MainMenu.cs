@@ -21,14 +21,11 @@ namespace Billar
         {
 
         }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             UsuarioForm myUsuarioform = new UsuarioForm();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -129,6 +129,7 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Maroon;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Enabled = false;
             this.richTextBox1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Gold;
             this.richTextBox1.Location = new System.Drawing.Point(338, 26);
@@ -214,7 +215,6 @@
             this.button5.TabIndex = 11;
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox6
             // 
