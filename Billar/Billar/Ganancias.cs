@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class UsuarioForm : Form
+    public partial class Ganancias : Form
     {
-        public UsuarioForm()
+        public Ganancias()
         {
             InitializeComponent();
-           //dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
-
         }
-
-
     }
 }
