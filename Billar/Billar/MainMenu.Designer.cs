@@ -157,7 +157,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(245, 247);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 83);
+            this.button1.Size = new System.Drawing.Size(174, 92);
             this.button1.TabIndex = 7;
             this.button1.Text = "Usuario\r\n";
             this.button1.UseVisualStyleBackColor = false;
@@ -170,7 +170,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(627, 247);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 83);
+            this.button2.Size = new System.Drawing.Size(177, 92);
             this.button2.TabIndex = 8;
             this.button2.Text = "Producto";
             this.button2.UseVisualStyleBackColor = false;
@@ -180,23 +180,27 @@
             this.button3.BackColor = System.Drawing.Color.DarkRed;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(245, 336);
+            this.button3.Location = new System.Drawing.Point(245, 345);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 83);
+            this.button3.Size = new System.Drawing.Size(174, 92);
             this.button3.TabIndex = 9;
             this.button3.Text = "Cliente";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkRed;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(435, 336);
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(435, 345);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 83);
+            this.button4.Size = new System.Drawing.Size(177, 92);
             this.button4.TabIndex = 10;
             this.button4.Text = "Ganancias";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -204,12 +208,13 @@
             this.button5.BackColor = System.Drawing.Color.DarkRed;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(627, 336);
+            this.button5.Location = new System.Drawing.Point(627, 345);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 83);
+            this.button5.Size = new System.Drawing.Size(177, 92);
             this.button5.TabIndex = 11;
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox6
             // 
@@ -224,12 +229,14 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkRed;
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button6.Location = new System.Drawing.Point(435, 247);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(177, 83);
+            this.button6.Size = new System.Drawing.Size(177, 92);
             this.button6.TabIndex = 16;
             this.button6.Text = "Mesas";
             this.button6.UseVisualStyleBackColor = false;
@@ -371,7 +378,7 @@
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1055, 541);
             this.Controls.Add(this.richTextBox1);
