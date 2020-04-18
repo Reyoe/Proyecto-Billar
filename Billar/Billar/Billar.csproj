@@ -82,6 +82,7 @@
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="ProfitsForm.cs">
       <SubType>Form</SubType>
     </Compile>
