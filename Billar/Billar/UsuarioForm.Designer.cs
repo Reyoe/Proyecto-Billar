@@ -103,13 +103,13 @@
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(201, 70);
             this.Titulo.TabIndex = 10;
-            this.Titulo.Text = "Inventario";
+            this.Titulo.Text = "Usuario";
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(155, 171);
+            this.dataGridView1.Location = new System.Drawing.Point(155, 244);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(573, 293);
             this.dataGridView1.TabIndex = 12;
@@ -128,7 +128,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "UsuarioForm";
             this.Text = "UsuarioForm";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

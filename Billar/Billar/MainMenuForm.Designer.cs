@@ -1,6 +1,6 @@
 ﻿namespace Billar
 {
-    partial class MainMenu
+    partial class MainMenuForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -162,6 +162,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Producto";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -174,6 +175,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Cliente";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -190,6 +192,7 @@
             this.button4.Text = "Ganancias";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -205,6 +208,7 @@
             this.button5.Text = "Cerrar sesión";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox6
             // 
@@ -364,7 +368,7 @@
             this.pictureBox18.TabIndex = 28;
             this.pictureBox18.TabStop = false;
             // 
-            // MainMenu
+            // MainMenuForm
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,7 +404,7 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Green;
-            this.Name = "MainMenu";
+            this.Name = "MainMenuForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "MainMenu";
             this.Load += new System.EventHandler(this.MainMenu_Load);

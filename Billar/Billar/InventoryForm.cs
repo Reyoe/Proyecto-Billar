@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class Ganancias : Form
+    public partial class InventoryForm : Form
     {
-        public Ganancias()
+        public InventoryForm()
         {
             InitializeComponent();
         }
