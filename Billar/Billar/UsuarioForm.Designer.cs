@@ -128,6 +128,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "UsuarioForm";
             this.Text = "UsuarioForm";
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
