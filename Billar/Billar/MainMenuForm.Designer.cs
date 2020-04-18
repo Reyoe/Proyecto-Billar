@@ -406,7 +406,7 @@
             this.ForeColor = System.Drawing.Color.Green;
             this.Name = "MainMenuForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "MainMenu";
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
