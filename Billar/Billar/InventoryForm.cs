@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class MainMenu : Form
+    public partial class InventoryForm : Form
     {
-        public MainMenu()
+        public InventoryForm()
         {
             InitializeComponent();
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM product");
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
