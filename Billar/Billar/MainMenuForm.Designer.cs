@@ -116,7 +116,6 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Maroon;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Enabled = false;
             this.richTextBox1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox1.Location = new System.Drawing.Point(338, 26);
