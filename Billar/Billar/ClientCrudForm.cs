@@ -47,9 +47,9 @@ namespace Billar
 
 
                 tbCode.Enabled = false;
-                tbName.Enabled = false;
-                tbHours.Enabled = false;
-                btAgregar.Enabled = false;
+                tbName.Enabled = true;
+                tbHours.Enabled = true;
+                btAgregar.Enabled = true;
                 btAgregar.Text = "Actualizar";
             }
         }

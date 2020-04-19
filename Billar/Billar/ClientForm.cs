@@ -42,7 +42,7 @@ namespace Billar
             code = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             hours = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            metodo = "MODIFICAR";
+            metodo = "Modificar";
             ClientCrudForm myClientCrudForm = new ClientCrudForm(int.Parse(code), name, int.Parse(hours), metodo);
             myClientCrudForm.ShowDialog();
         }
