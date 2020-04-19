@@ -20,6 +20,7 @@ namespace Billar
             lbTitulo.Text = "AGREGAR USUARIO";
             cbType.SelectedIndex = 0;
             tbCode.Enabled=false;
+            btAgregarU.Text = "Agregar";
         }
 
         public UsuarioCrudForm(string code, string username, string password, string name, string type, string metodo)

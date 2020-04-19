@@ -55,5 +55,15 @@ namespace Billar
             InventoryCrudForm myInventoryCrudForm = new InventoryCrudForm(code, name, price, stock, description, metodo);
             myInventoryCrudForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM product");
+        }
+
+        private void tbMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -41,6 +41,8 @@
             this.btnAgregarUs = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.btRecargar = new System.Windows.Forms.Button();
+            this.btMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -159,11 +161,33 @@
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
+            // btRecargar
+            // 
+            this.btRecargar.Location = new System.Drawing.Point(270, 132);
+            this.btRecargar.Name = "btRecargar";
+            this.btRecargar.Size = new System.Drawing.Size(117, 23);
+            this.btRecargar.TabIndex = 17;
+            this.btRecargar.Text = "Recargar";
+            this.btRecargar.UseVisualStyleBackColor = true;
+            this.btRecargar.Click += new System.EventHandler(this.btRecargar_Click);
+            // 
+            // btMenu
+            // 
+            this.btMenu.Location = new System.Drawing.Point(492, 141);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(117, 23);
+            this.btMenu.TabIndex = 18;
+            this.btMenu.Text = "Menu Principal";
+            this.btMenu.UseVisualStyleBackColor = true;
+            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
+            // 
             // UsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.btMenu);
+            this.Controls.Add(this.btRecargar);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregarUs);
@@ -197,5 +221,7 @@
         private System.Windows.Forms.Button btnAgregarUs;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Button btRecargar;
+        private System.Windows.Forms.Button btMenu;
     }
 }

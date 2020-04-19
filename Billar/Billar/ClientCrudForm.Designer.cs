@@ -55,7 +55,7 @@
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(91, 21);
             this.btExit.TabIndex = 1;
-            this.btExit.Text = "button2";
+            this.btExit.Text = "Salir";
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 

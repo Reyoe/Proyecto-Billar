@@ -40,7 +40,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btRecargar = new System.Windows.Forms.Button();
+            this.btMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -161,22 +162,32 @@
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btRecargar
             // 
-            this.button1.Location = new System.Drawing.Point(212, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 24);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Recargar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btRecargar.Location = new System.Drawing.Point(212, 131);
+            this.btRecargar.Name = "btRecargar";
+            this.btRecargar.Size = new System.Drawing.Size(95, 24);
+            this.btRecargar.TabIndex = 28;
+            this.btRecargar.Text = "Recargar";
+            this.btRecargar.UseVisualStyleBackColor = true;
+            this.btRecargar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btMenu
+            // 
+            this.btMenu.Location = new System.Drawing.Point(461, 131);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(117, 23);
+            this.btMenu.TabIndex = 29;
+            this.btMenu.Text = "Menu Principal";
+            this.btMenu.UseVisualStyleBackColor = true;
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btMenu);
+            this.Controls.Add(this.btRecargar);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btnMostrarCli);
             this.Controls.Add(this.btnModificarCli);
@@ -213,6 +224,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btEliminar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btRecargar;
+        private System.Windows.Forms.Button btMenu;
     }
 }

@@ -16,6 +16,8 @@ namespace Billar
         public InventoryCrudForm()
         {
             InitializeComponent();
+            btAgregar.Text = "Agregar";
+            lbTitulo.Text = "AGREGAR PRODUCTO";
         }
 
         public InventoryCrudForm(string code, string name, string price, string stock, string description, string metodo)
@@ -63,6 +65,8 @@ namespace Billar
             if (this.metodo == "INSERTAR")
             {
                 U.insertProduct(tbName.Text, float.Parse(tbPrice.Text), int.Parse(tbStock.Text), tbDescription.Text);
+                MessageBox.Show("Producto Insertado con exito!!\nRegresando al a inventario");
+                this.Close();
                 /* if (cbTipo.SelectedIndex == 0)
                  {
                      a.insertAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
@@ -72,9 +76,11 @@ namespace Billar
                      o.insertOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
                  }*/
             }
-            else if (this.metodo == "modificar")
+            else if (this.metodo == "Modificar")
             {
                 U.updateProduct(int.Parse(tbCode.Text), tbName.Text, float.Parse(tbPrice.Text), int.Parse(tbStock.Text), tbDescription.Text);
+                MessageBox.Show("Producto Modificado con exito!!\nRegresando al a inventario");
+                this.Close();
                 /*if (cbTipo.SelectedIndex == 0)
                 {
                     a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
@@ -86,6 +92,11 @@ namespace Billar
 
                 }*/
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

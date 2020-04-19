@@ -53,6 +53,8 @@
             this.btMostrar = new System.Windows.Forms.Button();
             this.btModificar = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
+            this.btRecargar = new System.Windows.Forms.Button();
+            this.btMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -328,12 +330,34 @@
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = true;
             // 
+            // btRecargar
+            // 
+            this.btRecargar.Location = new System.Drawing.Point(445, 114);
+            this.btRecargar.Name = "btRecargar";
+            this.btRecargar.Size = new System.Drawing.Size(105, 26);
+            this.btRecargar.TabIndex = 52;
+            this.btRecargar.Text = "Recargar";
+            this.btRecargar.UseVisualStyleBackColor = true;
+            this.btRecargar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btMenu
+            // 
+            this.btMenu.Location = new System.Drawing.Point(605, 114);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(105, 26);
+            this.btMenu.TabIndex = 53;
+            this.btMenu.Text = "Menu Principal";
+            this.btMenu.UseVisualStyleBackColor = true;
+            this.btMenu.Click += new System.EventHandler(this.tbMenu_Click);
+            // 
             // InventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1023, 541);
+            this.Controls.Add(this.btMenu);
+            this.Controls.Add(this.btRecargar);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btModificar);
             this.Controls.Add(this.btMostrar);
@@ -409,5 +433,7 @@
         private System.Windows.Forms.Button btMostrar;
         private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.Button btEliminar;
+        private System.Windows.Forms.Button btRecargar;
+        private System.Windows.Forms.Button btMenu;
     }
 }
