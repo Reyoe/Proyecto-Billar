@@ -47,7 +47,8 @@ namespace Billar
             myClientCrudForm.ShowDialog();
         }
 
-        private void Titulo_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Conexion.query("SELECT * FROM client");
         }
