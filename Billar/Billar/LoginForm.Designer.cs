@@ -53,10 +53,10 @@
             this.textPassword.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textPassword.Location = new System.Drawing.Point(67, 260);
             this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(124, 20);
             this.textPassword.TabIndex = 2;
             this.textPassword.Text = "Password";
-            this.textPassword.PasswordChar = '*';
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textPassword.Enter += new System.EventHandler(this.TextPasswordEnter);
             this.textPassword.Leave += new System.EventHandler(this.TextPasswordLeave);
@@ -82,7 +82,7 @@
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,8 +92,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.textUser);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "LoginForm";
+            this.Text = "Gestor de Billar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
