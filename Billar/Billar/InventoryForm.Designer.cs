@@ -297,6 +297,7 @@
             this.btAgregar.TabIndex = 48;
             this.btAgregar.Text = "Agregar";
             this.btAgregar.UseVisualStyleBackColor = true;
+            this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
             // 
             // btMostrar
             // 
@@ -306,6 +307,7 @@
             this.btMostrar.TabIndex = 49;
             this.btMostrar.Text = "Mostrar";
             this.btMostrar.UseVisualStyleBackColor = true;
+            this.btMostrar.Click += new System.EventHandler(this.btMostrar_Click);
             // 
             // btModificar
             // 
@@ -315,6 +317,7 @@
             this.btModificar.TabIndex = 50;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // btEliminar
             // 

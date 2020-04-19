@@ -9,8 +9,6 @@ namespace Billar
 {
     class Product
     {
-        class Cliente
-        {
             public DataTable GetProductByName(String name)
             {
                 string query = "Select * from product where Name='" + name + "' ";
@@ -47,4 +45,4 @@ namespace Billar
 
         }
     }
-}
+

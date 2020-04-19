@@ -23,6 +23,37 @@ namespace Billar
 
         }
 
+        private void btAgregar_Click(object sender, EventArgs e)
+        {
+            InventoryCrudForm myInventoryCrudForm = new InventoryCrudForm();
+            myInventoryCrudForm.ShowDialog();
 
+        }
+
+        private void btMostrar_Click(object sender, EventArgs e)
+        {
+            string code, name, price, stock, description ,metodo;
+            code = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            price = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            stock = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            description = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            metodo = "Mostrar";
+            InventoryCrudForm myInventoryCrudForm = new InventoryCrudForm(code, name, price, stock, description, metodo);
+            myInventoryCrudForm.ShowDialog();
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+            string code, name, price, stock, description, metodo;
+            code = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            price = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            stock = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            description = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            metodo = "Modificar";
+            InventoryCrudForm myInventoryCrudForm = new InventoryCrudForm(code, name, price, stock, description, metodo);
+            myInventoryCrudForm.ShowDialog();
+        }
     }
 }
