@@ -10,10 +10,10 @@ namespace Billar
     /// <summary>
     /// Description of MainForm.
     /// </summary>
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
         Usuario usuario;
-        public Login()
+        public LoginForm()
         {
             usuario = new Usuario();
             Conexion.crearConexionLocal();
@@ -67,8 +67,12 @@ namespace Billar
                 Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString());
                 textUser.Clear();
                 textPassword.Clear();
-                MainMenu menu = new MainMenu();
+                //UsuarioForm myUsuarioForm = new UsuarioForm();
+                
+                MainMenuForm menu = new MainMenuForm();
+   
                 menu.ShowDialog();
+                
 
             }
             else

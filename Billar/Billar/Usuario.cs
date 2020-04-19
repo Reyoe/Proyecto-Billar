@@ -24,9 +24,9 @@ namespace Billar
             Conexion.query(query);
             return Conexion.query(query);
         }
-        public void insertUsuario(string codigo, string nombre, string contrasenia)
+        public void insertUsuario(string username, string password, string name, string type)
         {
-            string query = "INSERT INTO user(code,Username,Password) VALUES('" + codigo + "','" + nombre + "','" + contrasenia + "');";
+            string query = "INSERT INTO user(Username,Password,Name,Type) VALUES('" + username + "','" + password + "','" + name + "','" + type +"');";
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
@@ -36,9 +36,9 @@ namespace Billar
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
-        public void updateUsuario(string codigo, string nombre, string contrasenia)
+        public void updateUsuario(int codigo, string Username, string password, string name)
         {
-            string query = "UPDATE user SET Username='" + nombre + "' , Password= '" + contrasenia + "' WHERE code='" + codigo + "';";
+            string query = "UPDATE user SET Username='" + Username + "' , Password= '" + password + "', Name= '"+ name + "' WHERE code=" + codigo + ";";
             Console.WriteLine(query);
             Conexion.query(query); ;
         }

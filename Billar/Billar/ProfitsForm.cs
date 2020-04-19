@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class MainMenu : Form
+    public partial class ProfitsForm : Form
     {
-        public MainMenu()
+        public ProfitsForm()
         {
             InitializeComponent();
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            UsuarioForm myUsuarioform = new UsuarioForm();
         }
     }
 }
