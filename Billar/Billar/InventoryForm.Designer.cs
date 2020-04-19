@@ -49,6 +49,10 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btAgregar = new System.Windows.Forms.Button();
+            this.btMostrar = new System.Windows.Forms.Button();
+            this.btModificar = new System.Windows.Forms.Button();
+            this.btEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -285,12 +289,52 @@
             this.dataGridView1.Size = new System.Drawing.Size(695, 313);
             this.dataGridView1.TabIndex = 47;
             // 
+            // btAgregar
+            // 
+            this.btAgregar.Location = new System.Drawing.Point(190, 146);
+            this.btAgregar.Name = "btAgregar";
+            this.btAgregar.Size = new System.Drawing.Size(105, 26);
+            this.btAgregar.TabIndex = 48;
+            this.btAgregar.Text = "Agregar";
+            this.btAgregar.UseVisualStyleBackColor = true;
+            // 
+            // btMostrar
+            // 
+            this.btMostrar.Location = new System.Drawing.Point(363, 146);
+            this.btMostrar.Name = "btMostrar";
+            this.btMostrar.Size = new System.Drawing.Size(105, 26);
+            this.btMostrar.TabIndex = 49;
+            this.btMostrar.Text = "Mostrar";
+            this.btMostrar.UseVisualStyleBackColor = true;
+            // 
+            // btModificar
+            // 
+            this.btModificar.Location = new System.Drawing.Point(530, 146);
+            this.btModificar.Name = "btModificar";
+            this.btModificar.Size = new System.Drawing.Size(105, 26);
+            this.btModificar.TabIndex = 50;
+            this.btModificar.Text = "Modificar";
+            this.btModificar.UseVisualStyleBackColor = true;
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.Location = new System.Drawing.Point(714, 146);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(105, 26);
+            this.btEliminar.TabIndex = 51;
+            this.btEliminar.Text = "Eliminar";
+            this.btEliminar.UseVisualStyleBackColor = true;
+            // 
             // InventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1023, 541);
+            this.Controls.Add(this.btEliminar);
+            this.Controls.Add(this.btModificar);
+            this.Controls.Add(this.btMostrar);
+            this.Controls.Add(this.btAgregar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox14);
@@ -358,5 +402,9 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btAgregar;
+        private System.Windows.Forms.Button btMostrar;
+        private System.Windows.Forms.Button btModificar;
+        private System.Windows.Forms.Button btEliminar;
     }
 }
