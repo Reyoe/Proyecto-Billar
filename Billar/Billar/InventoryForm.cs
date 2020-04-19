@@ -17,5 +17,10 @@ namespace Billar
             InitializeComponent();
             dataGridView1.DataSource = Conexion.query("SELECT * FROM product");
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
