@@ -19,6 +19,7 @@ namespace Billar
             metodo = "INSERTAR";
             lbTitulo.Text = "AGREGAR CLIENTE";
             tbCode.Enabled = false;
+            btAgregar.Text = "Agregar";
         }
         public ClientCrudForm(int code, string name, int hours,string metodo)
         {
@@ -47,9 +48,9 @@ namespace Billar
 
 
                 tbCode.Enabled = false;
-                tbName.Enabled = false;
-                tbHours.Enabled = false;
-                btAgregar.Enabled = false;
+                tbName.Enabled = true;
+                tbHours.Enabled = true;
+                btAgregar.Enabled = true;
                 btAgregar.Text = "Actualizar";
             }
         }
@@ -69,8 +70,12 @@ namespace Billar
                      o.insertOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
                  }*/
             }
-            else if (this.metodo == "modificar")
+            else if (this.metodo == "Modificar")
             {
+                MessageBox.Show(Int32.Parse(tbCode.Text).ToString());
+                MessageBox.Show(tbName.Text);
+                MessageBox.Show(int.Parse(tbHours.Text).ToString());
+
                 U.updateCliente(Int32.Parse(tbCode.Text), tbName.Text, int.Parse(tbHours.Text));
                 /*if (cbTipo.SelectedIndex == 0)
                 {

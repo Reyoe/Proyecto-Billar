@@ -42,9 +42,7 @@ namespace Billar
 
         private void Titulo_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
-            dataGridView1.Columns[2].Visible = false;
-            dataGridView1.Columns[4].Visible = false;
+            
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -58,6 +56,18 @@ namespace Billar
             metodo = "Modificar";
             UsuarioCrudForm myUserCrudForm = new UsuarioCrudForm(code, username, password, name, type, metodo);
             myUserCrudForm.ShowDialog();
+        }
+
+        private void btRecargar_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
+        }
+
+        private void btMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

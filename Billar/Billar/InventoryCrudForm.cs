@@ -10,71 +10,63 @@ using System.Windows.Forms;
 
 namespace Billar
 {
-    public partial class UsuarioCrudForm : Form
+    public partial class InventoryCrudForm : Form
     {
         string metodo;
-        public UsuarioCrudForm()
+        public InventoryCrudForm()
         {
             InitializeComponent();
-            metodo = "INSERTAR";
-            lbTitulo.Text = "AGREGAR USUARIO";
-            cbType.SelectedIndex = 0;
-            tbCode.Enabled=false;
-            btAgregarU.Text = "Agregar";
+            btAgregar.Text = "Agregar";
+            lbTitulo.Text = "AGREGAR PRODUCTO";
         }
 
-        public UsuarioCrudForm(string code, string username, string password, string name, string type, string metodo)
+        public InventoryCrudForm(string code, string name, string price, string stock, string description, string metodo)
         {
             InitializeComponent();
             this.metodo = metodo;
-            if (type == "Empleado") {
-                cbType.SelectedIndex = 0;
-            }
-            else
-            {
-                cbType.SelectedIndex = 1;
-            }
 
             if (metodo == "Mostrar")
             {
-                lbTitulo.Text = "DETALLES USUARIO";
+                lbTitulo.Text = "DETALLES PRODUCTO";
                 tbCode.Text = code;
-                tbUsername.Text = username;
-                tbPassword.Text = password;
                 tbName.Text = name;
-
+                tbPrice.Text = price;
+                tbStock.Text = stock;
+                tbDescription.Text = description;
 
                 tbCode.Enabled = false;
-                tbUsername.Enabled = false;
-                tbPassword.Enabled = false;
                 tbName.Enabled = false;
-                cbType.Enabled = false;
-                btAgregarU.Enabled = false;
+                tbPrice.Enabled = false;
+                tbStock.Enabled = false;
+                tbDescription.Enabled = false; ;
+                btAgregar.Enabled = false;
             }
             if (metodo == "Modificar")
             {
-                lbTitulo.Text = "MODIFICAR USUARIO";
+                lbTitulo.Text = "MODIFICAR PRODUCTO";
                 tbCode.Text = code;
-                tbUsername.Text = username;
-                tbPassword.Text = password;
                 tbName.Text = name;
-
+                tbPrice.Text = price;
+                tbStock.Text = stock;
+                tbDescription.Text = description;
 
                 tbCode.Enabled = false;
-                tbUsername.Enabled = true;
-                tbPassword.Enabled = true;
                 tbName.Enabled = true;
-                cbType.Enabled = false;
-                btAgregarU.Text = "ACTUALIZAR";
+                tbPrice.Enabled = true;
+                tbStock.Enabled = true;
+                tbDescription.Enabled = true; ;
+                btAgregar.Enabled = true;
+                btAgregar.Text = "Actualizar";
             }
         }
-
-        private void btAgregarU_Click(object sender, EventArgs e)
+        private void btAgregar_Click(object sender, EventArgs e)
         {
-            Usuario U = new Usuario();
+            Product U = new Product();
             if (this.metodo == "INSERTAR")
             {
-                U.insertUsuario(tbUsername.Text, tbPassword.Text, tbName.Text, cbType.Text);
+                U.insertProduct(tbName.Text, float.Parse(tbPrice.Text), int.Parse(tbStock.Text), tbDescription.Text);
+                MessageBox.Show("Producto Insertado con exito!!\nRegresando al a inventario");
+                this.Close();
                 /* if (cbTipo.SelectedIndex == 0)
                  {
                      a.insertAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
@@ -84,9 +76,11 @@ namespace Billar
                      o.insertOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
                  }*/
             }
-            else if (this.metodo == "modificar")
+            else if (this.metodo == "Modificar")
             {
-                U.updateUsuario(Int32.Parse(tbCode.Text), tbUsername.Text, tbPassword.Text, tbName.Text);
+                U.updateProduct(int.Parse(tbCode.Text), tbName.Text, float.Parse(tbPrice.Text), int.Parse(tbStock.Text), tbDescription.Text);
+                MessageBox.Show("Producto Modificado con exito!!\nRegresando al a inventario");
+                this.Close();
                 /*if (cbTipo.SelectedIndex == 0)
                 {
                     a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);

@@ -38,7 +38,7 @@ namespace Billar
         }
         public void updateCliente(int codigo, string name, int hours)
         {
-            string query = "UPDATE user SET name='" + name + "' , hours= " + hours + " WHERE code=" + codigo + ";";
+            string query = "UPDATE client SET name='" + name + "' , hours= " + hours + " WHERE code=" + codigo + ";";
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
