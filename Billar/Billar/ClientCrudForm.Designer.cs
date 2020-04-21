@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientCrudForm));
             this.btAgregar = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
             this.lbTitulo = new System.Windows.Forms.Label();
@@ -122,6 +123,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1055, 538);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -132,6 +135,7 @@
             this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btAgregar);
+            this.DoubleBuffered = true;
             this.Name = "ClientCrudForm";
             this.Text = "ClientCrudForm";
             this.ResumeLayout(false);
