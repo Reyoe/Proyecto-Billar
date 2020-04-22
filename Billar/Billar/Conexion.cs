@@ -14,7 +14,7 @@ namespace Billar
         static string usuario;
         static string password;
         static string bd;
-        static string puerto;
+        //static string puerto;
         static string cadenadeconexion = "";
 
         static public void crearConexionLocal()
