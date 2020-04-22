@@ -17,6 +17,8 @@ namespace Billar
         {
             InitializeComponent();
             btAgregar.Text = "Agregar";
+            tbCode.Enabled = false;
+            tbCode.Visible = false;
             lbTitulo.Text = "AGREGAR PRODUCTO";
         }
 

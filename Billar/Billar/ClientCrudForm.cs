@@ -19,6 +19,7 @@ namespace Billar
             metodo = "INSERTAR";
             lbTitulo.Text = "AGREGAR CLIENTE";
             tbCode.Enabled = false;
+            tbCode.Visible = false;
             btAgregar.Text = "Agregar";
         }
         public ClientCrudForm(int code, string name, int hours,string metodo)

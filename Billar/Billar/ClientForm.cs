@@ -52,5 +52,10 @@ namespace Billar
         {
             dataGridView1.DataSource = Conexion.query("SELECT * FROM client");
         }
+
+        private void btMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

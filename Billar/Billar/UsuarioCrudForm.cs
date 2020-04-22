@@ -19,7 +19,8 @@ namespace Billar
             metodo = "INSERTAR";
             lbTitulo.Text = "AGREGAR USUARIO";
             cbType.SelectedIndex = 0;
-            tbCode.Enabled=false;
+            tbCode.Enabled = false;
+            tbCode.Visible = false;
             btAgregarU.Text = "Agregar";
         }
 

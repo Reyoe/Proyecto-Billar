@@ -112,6 +112,7 @@
             this.btMenu.TabIndex = 29;
             this.btMenu.Text = "Menu Principal";
             this.btMenu.UseVisualStyleBackColor = true;
+            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
             // label1
             // 
