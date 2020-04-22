@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientForm));
             this.btnMostrarCli = new System.Windows.Forms.Button();
             this.btnModificarCli = new System.Windows.Forms.Button();
             this.btnAgregarCli = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Titulo = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btEliminar = new System.Windows.Forms.Button();
             this.btRecargar = new System.Windows.Forms.Button();
             this.btMenu = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMostrarCli
             // 
-            this.btnMostrarCli.Location = new System.Drawing.Point(315, 180);
+            this.btnMostrarCli.Location = new System.Drawing.Point(411, 112);
             this.btnMostrarCli.Name = "btnMostrarCli";
             this.btnMostrarCli.Size = new System.Drawing.Size(117, 23);
             this.btnMostrarCli.TabIndex = 26;
@@ -55,7 +56,7 @@
             // 
             // btnModificarCli
             // 
-            this.btnModificarCli.Location = new System.Drawing.Point(461, 180);
+            this.btnModificarCli.Location = new System.Drawing.Point(565, 112);
             this.btnModificarCli.Name = "btnModificarCli";
             this.btnModificarCli.Size = new System.Drawing.Size(117, 23);
             this.btnModificarCli.TabIndex = 25;
@@ -65,7 +66,7 @@
             // 
             // btnAgregarCli
             // 
-            this.btnAgregarCli.Location = new System.Drawing.Point(155, 180);
+            this.btnAgregarCli.Location = new System.Drawing.Point(260, 112);
             this.btnAgregarCli.Name = "btnAgregarCli";
             this.btnAgregarCli.Size = new System.Drawing.Size(117, 23);
             this.btnAgregarCli.TabIndex = 24;
@@ -75,41 +76,18 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Desktop;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Desktop;
-            this.dataGridView1.Location = new System.Drawing.Point(155, 244);
+            this.dataGridView1.Location = new System.Drawing.Point(260, 155);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(573, 293);
             this.dataGridView1.TabIndex = 23;
             // 
-            // Titulo
-            // 
-            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Titulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Titulo.Location = new System.Drawing.Point(335, 38);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(201, 70);
-            this.Titulo.TabIndex = 21;
-            this.Titulo.Text = "Cliente";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.LightSlateGray;
-            this.pictureBox5.Location = new System.Drawing.Point(144, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(596, 96);
-            this.pictureBox5.TabIndex = 22;
-            this.pictureBox5.TabStop = false;
-            // 
             // btEliminar
             // 
-            this.btEliminar.Location = new System.Drawing.Point(611, 180);
+            this.btEliminar.Location = new System.Drawing.Point(716, 112);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(117, 23);
             this.btEliminar.TabIndex = 27;
@@ -118,9 +96,9 @@
             // 
             // btRecargar
             // 
-            this.btRecargar.Location = new System.Drawing.Point(212, 131);
+            this.btRecargar.Location = new System.Drawing.Point(411, 473);
             this.btRecargar.Name = "btRecargar";
-            this.btRecargar.Size = new System.Drawing.Size(95, 24);
+            this.btRecargar.Size = new System.Drawing.Size(117, 24);
             this.btRecargar.TabIndex = 28;
             this.btRecargar.Text = "Recargar";
             this.btRecargar.UseVisualStyleBackColor = true;
@@ -128,28 +106,57 @@
             // 
             // btMenu
             // 
-            this.btMenu.Location = new System.Drawing.Point(461, 131);
+            this.btMenu.Location = new System.Drawing.Point(565, 473);
             this.btMenu.Name = "btMenu";
             this.btMenu.Size = new System.Drawing.Size(117, 23);
             this.btMenu.TabIndex = 29;
             this.btMenu.Text = "Menu Principal";
             this.btMenu.UseVisualStyleBackColor = true;
             // 
-            // pictureBox4
+            // label1
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.pictureBox4.Location = new System.Drawing.Point(144, 114);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(596, 434);
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(485, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 37);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Cliente";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(827, 470);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox9.TabIndex = 45;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(765, 470);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox11.TabIndex = 44;
+            this.pictureBox11.TabStop = false;
             // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Billar.Properties.Resources.BG1;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1066, 532);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btMenu);
             this.Controls.Add(this.btRecargar);
             this.Controls.Add(this.btEliminar);
@@ -157,15 +164,14 @@
             this.Controls.Add(this.btnModificarCli);
             this.Controls.Add(this.btnAgregarCli);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Titulo);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
+            this.DoubleBuffered = true;
             this.Name = "ClientForm";
             this.Text = "ClientForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -175,11 +181,11 @@
         private System.Windows.Forms.Button btnModificarCli;
         private System.Windows.Forms.Button btnAgregarCli;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.Button btRecargar;
         private System.Windows.Forms.Button btMenu;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

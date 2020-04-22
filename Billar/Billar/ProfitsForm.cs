@@ -41,5 +41,10 @@ namespace Billar
         {
 
         }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
