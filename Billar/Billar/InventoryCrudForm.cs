@@ -98,5 +98,10 @@ namespace Billar
         {
             this.Close();
         }
+
+        private void InventoryCrudForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
