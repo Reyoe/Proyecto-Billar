@@ -17,6 +17,8 @@ namespace Billar
         {
             InitializeComponent();
             btAgregar.Text = "Agregar";
+            tbCode.Enabled = false;
+            tbCode.Visible = false;
             lbTitulo.Text = "AGREGAR PRODUCTO";
         }
 
@@ -97,6 +99,11 @@ namespace Billar
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void InventoryCrudForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
