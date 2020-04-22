@@ -65,5 +65,18 @@ namespace Billar
         {
             this.Close();
         }
+
+        private void btEliminar_Click(object sender, EventArgs e)
+        {
+            string code, name, price, stock, description, metodo;
+            code = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            price = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            stock = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            description = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            metodo = "Eliminar";
+            InventoryCrudForm myInventoryCrudForm = new InventoryCrudForm(code, name, price, stock, description, metodo);
+            myInventoryCrudForm.ShowDialog();
+        }
     }
 }

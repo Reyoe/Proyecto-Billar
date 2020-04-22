@@ -16,6 +16,7 @@ namespace Billar
         public InventoryCrudForm()
         {
             InitializeComponent();
+            metodo = "INSERTAR";
             btAgregar.Text = "Agregar";
             tbCode.Enabled = false;
             tbCode.Visible = false;
@@ -60,6 +61,23 @@ namespace Billar
                 btAgregar.Enabled = true;
                 btAgregar.Text = "Actualizar";
             }
+            if (metodo == "Eliminar")
+            {
+                lbTitulo.Text = "DETALLES DEL PRODUCTO A ELIMINAR";
+                tbCode.Text = code;
+                tbName.Text = name;
+                tbPrice.Text = price;
+                tbStock.Text = stock;
+                tbDescription.Text = description;
+
+                tbCode.Enabled = false;
+                tbName.Enabled = false;
+                tbPrice.Enabled = false;
+                tbStock.Enabled = false;
+                tbDescription.Enabled = false; ;
+                btAgregar.Enabled = true;
+                btAgregar.Text = "Eliminar";
+            }
         }
         private void btAgregar_Click(object sender, EventArgs e)
         {
@@ -82,6 +100,22 @@ namespace Billar
             {
                 U.updateProduct(int.Parse(tbCode.Text), tbName.Text, float.Parse(tbPrice.Text), int.Parse(tbStock.Text), tbDescription.Text);
                 MessageBox.Show("Producto Modificado con exito!!\nRegresando al a inventario");
+                this.Close();
+                /*if (cbTipo.SelectedIndex == 0)
+                {
+                    a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
+
+                }
+                if (cbTipo.SelectedIndex == 1)
+                {
+                    o.updateOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
+
+                }*/
+            }
+            else if (this.metodo == "Modificar")
+            {
+                U.deleteProduct(int.Parse(tbCode.Text));
+                MessageBox.Show("Producto Eliminado con exito!!\nRegresando al a inventario");
                 this.Close();
                 /*if (cbTipo.SelectedIndex == 0)
                 {

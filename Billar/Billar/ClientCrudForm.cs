@@ -18,6 +18,7 @@ namespace Billar
             InitializeComponent();
             metodo = "INSERTAR";
             lbTitulo.Text = "AGREGAR CLIENTE";
+            label2.Visible = false;
             tbCode.Enabled = false;
             tbCode.Visible = false;
             btAgregar.Text = "Agregar";
@@ -34,7 +35,7 @@ namespace Billar
                 tbName.Text = name;
                 tbHours.Text = hours.ToString();
 
-
+                tbCode.Visible = true;
                 tbCode.Enabled = false;
                 tbName.Enabled= false;
                 tbHours.Enabled = false;
@@ -47,7 +48,8 @@ namespace Billar
                 tbName.Text = name;
                 tbHours.Text = hours.ToString();
 
-
+                label2.Visible = true;
+                tbCode.Visible = true;
                 tbCode.Enabled = false;
                 tbName.Enabled = true;
                 tbHours.Enabled = true;
@@ -62,6 +64,9 @@ namespace Billar
             if (this.metodo == "INSERTAR")
             {
                 U.insertCliente(tbName.Text, int.Parse(tbHours.Text));
+                MessageBox.Show("Cliente insertado con exito!!\nRegresando al a cliente");
+
+                this.Close();
                 /* if (cbTipo.SelectedIndex == 0)
                  {
                      a.insertAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
@@ -73,11 +78,11 @@ namespace Billar
             }
             else if (this.metodo == "Modificar")
             {
-                MessageBox.Show(Int32.Parse(tbCode.Text).ToString());
-                MessageBox.Show(tbName.Text);
-                MessageBox.Show(int.Parse(tbHours.Text).ToString());
 
                 U.updateCliente(Int32.Parse(tbCode.Text), tbName.Text, int.Parse(tbHours.Text));
+                MessageBox.Show("Cliente modificado con exito!!\nRegresando al a cliente");
+
+                this.Close();
                 /*if (cbTipo.SelectedIndex == 0)
                 {
                     a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
