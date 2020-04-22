@@ -76,6 +76,9 @@ namespace Billar
             if (this.metodo == "INSERTAR")
             {
                 U.insertUsuario(tbUsername.Text, tbPassword.Text, tbName.Text, cbType.Text);
+                MessageBox.Show("Usuario creado con exito con exito!!\nRegresando al a inventario");
+                this.Close();
+
                 /* if (cbTipo.SelectedIndex == 0)
                  {
                      a.insertAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
@@ -85,9 +88,12 @@ namespace Billar
                      o.insertOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
                  }*/
             }
-            else if (this.metodo == "modificar")
+            else if (this.metodo == "Modificar")
             {
                 U.updateUsuario(Int32.Parse(tbCode.Text), tbUsername.Text, tbPassword.Text, tbName.Text);
+                MessageBox.Show("Usuario Modificado con exito!!\nRegresando al a inventario");
+                this.Close();
+
                 /*if (cbTipo.SelectedIndex == 0)
                 {
                     a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);

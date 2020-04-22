@@ -50,28 +50,28 @@
             // 
             // tbCode
             // 
-            this.tbCode.Location = new System.Drawing.Point(458, 195);
+            this.tbCode.Location = new System.Drawing.Point(458, 106);
             this.tbCode.Name = "tbCode";
             this.tbCode.Size = new System.Drawing.Size(135, 20);
             this.tbCode.TabIndex = 0;
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(458, 104);
+            this.tbName.Location = new System.Drawing.Point(458, 149);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(135, 20);
             this.tbName.TabIndex = 1;
             // 
             // tbPrice
             // 
-            this.tbPrice.Location = new System.Drawing.Point(458, 244);
+            this.tbPrice.Location = new System.Drawing.Point(458, 195);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.Size = new System.Drawing.Size(135, 20);
             this.tbPrice.TabIndex = 2;
             // 
             // tbStock
             // 
-            this.tbStock.Location = new System.Drawing.Point(458, 152);
+            this.tbStock.Location = new System.Drawing.Point(458, 244);
             this.tbStock.Name = "tbStock";
             this.tbStock.Size = new System.Drawing.Size(135, 20);
             this.tbStock.TabIndex = 3;
