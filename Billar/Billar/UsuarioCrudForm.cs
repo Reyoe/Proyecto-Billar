@@ -21,7 +21,7 @@ namespace Billar
             cbType.SelectedIndex = 0;
             tbCode.Enabled = false;
             tbCode.Visible = false;
-            btAgregarU.Text = "Agregar";
+            pictureBox1.Text = "Agregar";
         }
 
         public UsuarioCrudForm(string code, string username, string password, string name, string type, string metodo)
@@ -50,7 +50,7 @@ namespace Billar
                 tbPassword.Enabled = false;
                 tbName.Enabled = false;
                 cbType.Enabled = false;
-                btAgregarU.Enabled = false;
+                pictureBox1.Enabled = false;
             }
             if (metodo == "Modificar")
             {
@@ -66,11 +66,11 @@ namespace Billar
                 tbPassword.Enabled = true;
                 tbName.Enabled = true;
                 cbType.Enabled = false;
-                btAgregarU.Text = "ACTUALIZAR";
+                pictureBox1.Text = "ACTUALIZAR";
             }
         }
 
-        private void btAgregarU_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Usuario U = new Usuario();
             if (this.metodo == "INSERTAR")
@@ -112,14 +112,19 @@ namespace Billar
             this.Close();
         }*/
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        /*private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void UsuarioCrudForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
