@@ -107,7 +107,17 @@ namespace Billar
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        /*private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }*/
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Close();
         }
