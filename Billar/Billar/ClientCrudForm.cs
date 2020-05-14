@@ -21,7 +21,7 @@ namespace Billar
             label2.Visible = false;
             tbCode.Enabled = false;
             tbCode.Visible = false;
-            btAgregar.Text = "Agregar";
+            pictureBox1.Text = "Agregar";
         }
         public ClientCrudForm(int code, string name, int hours,string metodo)
         {
@@ -39,7 +39,7 @@ namespace Billar
                 tbCode.Enabled = false;
                 tbName.Enabled= false;
                 tbHours.Enabled = false;
-                btAgregar.Enabled = false;
+                pictureBox1.Enabled = false;
             }
             if (metodo == "Modificar")
             {
@@ -53,12 +53,12 @@ namespace Billar
                 tbCode.Enabled = false;
                 tbName.Enabled = true;
                 tbHours.Enabled = true;
-                btAgregar.Enabled = true;
-                btAgregar.Text = "Actualizar";
+                pictureBox1.Enabled = true;
+                pictureBox1.Text = "Actualizar";
             }
         }
 
-        private void btAgregar_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Cliente U = new Cliente();
             if (this.metodo == "INSERTAR")
@@ -96,9 +96,19 @@ namespace Billar
             }
         }
 
-        private void btExit_Click(object sender, EventArgs e)
+        /*private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }*/
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        /*private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }*/
     }
 }

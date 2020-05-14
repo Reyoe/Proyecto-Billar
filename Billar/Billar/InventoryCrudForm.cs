@@ -17,7 +17,7 @@ namespace Billar
         {
             InitializeComponent();
             metodo = "INSERTAR";
-            btAgregar.Text = "Agregar";
+            pictureBox1.Text = "Agregar";
             tbCode.Enabled = false;
             tbCode.Visible = false;
             lbTitulo.Text = "AGREGAR PRODUCTO";
@@ -42,7 +42,7 @@ namespace Billar
                 tbPrice.Enabled = false;
                 tbStock.Enabled = false;
                 tbDescription.Enabled = false; ;
-                btAgregar.Enabled = false;
+                pictureBox1.Enabled = false;
             }
             if (metodo == "Modificar")
             {
@@ -58,8 +58,8 @@ namespace Billar
                 tbPrice.Enabled = true;
                 tbStock.Enabled = true;
                 tbDescription.Enabled = true; ;
-                btAgregar.Enabled = true;
-                btAgregar.Text = "Actualizar";
+                pictureBox1.Enabled = true;
+                pictureBox1.Text = "Actualizar";
             }
             if (metodo == "Eliminar")
             {
@@ -75,11 +75,11 @@ namespace Billar
                 tbPrice.Enabled = false;
                 tbStock.Enabled = false;
                 tbDescription.Enabled = false; ;
-                btAgregar.Enabled = true;
-                btAgregar.Text = "Eliminar";
+                pictureBox1.Enabled = true;
+                pictureBox1.Text = "Eliminar";
             }
         }
-        private void btAgregar_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Product U = new Product();
             if (this.metodo == "INSERTAR")
@@ -130,14 +130,24 @@ namespace Billar
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        /*private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }*/
 
         private void InventoryCrudForm_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /*private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }*/
     }
 }
