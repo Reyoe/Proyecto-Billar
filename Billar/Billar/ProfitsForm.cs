@@ -46,5 +46,10 @@ namespace Billar
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM profits");
+        }
     }
 }
