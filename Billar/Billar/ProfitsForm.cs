@@ -27,11 +27,6 @@ namespace Billar
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -50,6 +45,16 @@ namespace Billar
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Conexion.query("SELECT * FROM profits");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
