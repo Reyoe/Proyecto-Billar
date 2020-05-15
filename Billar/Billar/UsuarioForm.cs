@@ -58,14 +58,24 @@ namespace Billar
             myUserCrudForm.ShowDialog();
         }
 
-        private void btRecargar_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Conexion.query("SELECT * FROM user");
             dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[4].Visible = false;
         }
 
-        private void btMenu_Click(object sender, EventArgs e)
+       /* private void btMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }*/
+
+        /*private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }*/
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Close();
         }

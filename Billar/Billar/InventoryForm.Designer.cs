@@ -39,8 +39,6 @@
             this.btMostrar = new System.Windows.Forms.Button();
             this.btModificar = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.btRecargar = new System.Windows.Forms.Button();
-            this.btMenu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -159,26 +157,6 @@
             this.btEliminar.UseVisualStyleBackColor = true;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
-            // btRecargar
-            // 
-            this.btRecargar.Location = new System.Drawing.Point(402, 479);
-            this.btRecargar.Name = "btRecargar";
-            this.btRecargar.Size = new System.Drawing.Size(116, 26);
-            this.btRecargar.TabIndex = 52;
-            this.btRecargar.Text = "Recargar";
-            this.btRecargar.UseVisualStyleBackColor = true;
-            this.btRecargar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btMenu
-            // 
-            this.btMenu.Location = new System.Drawing.Point(569, 479);
-            this.btMenu.Name = "btMenu";
-            this.btMenu.Size = new System.Drawing.Size(116, 26);
-            this.btMenu.TabIndex = 53;
-            this.btMenu.Text = "Menu Principal";
-            this.btMenu.UseVisualStyleBackColor = true;
-            this.btMenu.Click += new System.EventHandler(this.tbMenu_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -196,22 +174,24 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(328, 477);
+            this.pictureBox9.Location = new System.Drawing.Point(575, 479);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(58, 50);
             this.pictureBox9.TabIndex = 56;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(266, 477);
+            this.pictureBox1.Location = new System.Drawing.Point(462, 477);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 50);
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // InventoryForm
             // 
@@ -224,8 +204,6 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btMenu);
-            this.Controls.Add(this.btRecargar);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btModificar);
             this.Controls.Add(this.btMostrar);
@@ -263,8 +241,6 @@
         private System.Windows.Forms.Button btMostrar;
         private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.Button btEliminar;
-        private System.Windows.Forms.Button btRecargar;
-        private System.Windows.Forms.Button btMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox1;

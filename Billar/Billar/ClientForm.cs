@@ -48,12 +48,22 @@ namespace Billar
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox11_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Conexion.query("SELECT * FROM client");
         }
 
-        private void btMenu_Click(object sender, EventArgs e)
+        /*private void btMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }*/
+
+        /*private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }*/
+
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Close();
         }
