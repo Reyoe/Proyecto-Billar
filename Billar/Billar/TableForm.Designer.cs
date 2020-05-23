@@ -78,6 +78,7 @@
             // labelCost
             // 
             this.labelCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelCost.BackColor = System.Drawing.Color.Transparent;
             this.labelCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCost.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelCost.Location = new System.Drawing.Point(812, 355);
@@ -90,6 +91,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(742, 353);
@@ -100,6 +102,7 @@
             // 
             // groupBoxDiscounts
             // 
+            this.groupBoxDiscounts.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxDiscounts.Controls.Add(this.buttonApplyDiscount);
             this.groupBoxDiscounts.Controls.Add(this.textBoxDiscountIdDisc);
             this.groupBoxDiscounts.Controls.Add(this.textBoxDiscountUserClient);
@@ -187,6 +190,7 @@
             // 
             // groupBoxModTables
             // 
+            this.groupBoxModTables.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxModTables.Controls.Add(this.buttonTablesRegistres);
             this.groupBoxModTables.Controls.Add(this.buttonPopTable);
             this.groupBoxModTables.Controls.Add(this.buttonPushTable);
@@ -256,7 +260,7 @@
             // labelNumberTable
             // 
             this.labelNumberTable.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelNumberTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.labelNumberTable.BackColor = System.Drawing.Color.Transparent;
             this.labelNumberTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberTable.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelNumberTable.Location = new System.Drawing.Point(351, 33);
@@ -269,6 +273,7 @@
             // groupBoxRequeriments
             // 
             this.groupBoxRequeriments.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBoxRequeriments.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxRequeriments.Controls.Add(this.label7);
             this.groupBoxRequeriments.Controls.Add(this.comboBoxMethod);
             this.groupBoxRequeriments.Controls.Add(this.textBoxClient);
@@ -389,6 +394,7 @@
             // labelTimeRemaining
             // 
             this.labelTimeRemaining.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTimeRemaining.BackColor = System.Drawing.Color.Transparent;
             this.labelTimeRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimeRemaining.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelTimeRemaining.Location = new System.Drawing.Point(641, 355);
@@ -401,6 +407,7 @@
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Location = new System.Drawing.Point(467, 353);
@@ -412,6 +419,7 @@
             // labelTimeElapsed
             // 
             this.labelTimeElapsed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTimeElapsed.BackColor = System.Drawing.Color.Transparent;
             this.labelTimeElapsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimeElapsed.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelTimeElapsed.Location = new System.Drawing.Point(382, 355);
@@ -424,6 +432,7 @@
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(183, 353);
@@ -467,6 +476,7 @@
             // labelTableOnGame
             // 
             this.labelTableOnGame.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTableOnGame.BackColor = System.Drawing.Color.Transparent;
             this.labelTableOnGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTableOnGame.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelTableOnGame.Location = new System.Drawing.Point(84, 356);
@@ -489,6 +499,7 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(5, 353);
@@ -500,6 +511,7 @@
             // pictureBoxNotAvailable
             // 
             this.pictureBoxNotAvailable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxNotAvailable.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxNotAvailable.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNotAvailable.Image")));
             this.pictureBoxNotAvailable.Location = new System.Drawing.Point(290, 59);
             this.pictureBoxNotAvailable.Name = "pictureBoxNotAvailable";
@@ -522,7 +534,7 @@
             // buttonLeftTables
             // 
             this.buttonLeftTables.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonLeftTables.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.buttonLeftTables.BackColor = System.Drawing.Color.Transparent;
             this.buttonLeftTables.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLeftTables.BackgroundImage")));
             this.buttonLeftTables.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonLeftTables.Cursor = System.Windows.Forms.Cursors.Hand;
