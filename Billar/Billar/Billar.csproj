@@ -84,6 +84,7 @@
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="InventoryCrudForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,7 @@
     <Compile Include="MainMenuForm.Designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table.cs" />
     <Compile Include="TableForm.cs">
       <SubType>Form</SubType>
     </Compile>
