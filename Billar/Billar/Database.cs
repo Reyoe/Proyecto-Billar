@@ -14,10 +14,10 @@ namespace Billar
 		private MySqlDataReader read;
 		private MySqlCommand command;
 
-		public DataBase()
+		/*public DataBase()
 		{
 			command = new MySqlCommand();
-		}
+		}*/
 
 		public MySqlConnection OpenConnection()
 		{
