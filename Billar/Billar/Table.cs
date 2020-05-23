@@ -9,7 +9,7 @@ namespace Billar
 {
     public class Table
     {
-		private int id;
+		/*private int id;
 		private bool available;
 		private bool discount;
 		private bool finished;
@@ -20,7 +20,7 @@ namespace Billar
 		private int minutes;
 		private Stopwatch timeElapsed;
 		double total;
-		private DataBase database;
+		//private DataBase database;
 
 		public Table(int _id)
 		{
@@ -136,6 +136,6 @@ namespace Billar
 			{
 				database.UpdateHrsClient(userClient, int.Parse(CalculateTimeElapsed().Substring(0, 2)));
 			}
-		}
+		}*/
 	}
 }
