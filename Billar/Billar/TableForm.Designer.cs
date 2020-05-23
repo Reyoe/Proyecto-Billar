@@ -195,7 +195,7 @@
             this.groupBoxModTables.Controls.Add(this.buttonPopTable);
             this.groupBoxModTables.Controls.Add(this.buttonPushTable);
             this.groupBoxModTables.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBoxModTables.Location = new System.Drawing.Point(-5, 33);
+            this.groupBoxModTables.Location = new System.Drawing.Point(12, 33);
             this.groupBoxModTables.Name = "groupBoxModTables";
             this.groupBoxModTables.Size = new System.Drawing.Size(200, 156);
             this.groupBoxModTables.TabIndex = 47;
