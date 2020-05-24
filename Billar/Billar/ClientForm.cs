@@ -38,6 +38,11 @@ namespace Billar
             myClientCrudForm.ShowDialog();
         }
 
+        private void ClientForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnMostrarCli_Click(object sender, EventArgs e)
         {
             string code, name, hours, metodo;

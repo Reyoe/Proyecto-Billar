@@ -13,6 +13,12 @@ namespace Billar
     public partial class TableForm : Form
     {
         string name, id, type, password, username;
+
+        private void TableForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public TableForm()
         {
             InitializeComponent();
