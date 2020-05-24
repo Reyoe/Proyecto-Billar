@@ -9,7 +9,7 @@ namespace Billar
 {
     public class Table
     {
-		/*private int id;
+	    private int id;
 		private bool available;
 		private bool discount;
 		private bool finished;
@@ -20,7 +20,7 @@ namespace Billar
 		private int minutes;
 		private Stopwatch timeElapsed;
 		double total;
-		//private DataBase database;
+
 
 		public Table(int _id)
 		{
@@ -31,7 +31,7 @@ namespace Billar
 			hours = 0;
 			minutes = 0;
 			timeElapsed = new Stopwatch();
-			database = new DataBase();
+			
 		}
 		public int GetId()
 		{
@@ -110,7 +110,7 @@ namespace Billar
 		}
 		public string CalculateCost()
 		{
-			total = database.GetPriceTable();
+			//total = database.GetPriceTable();
 			double mul = ((double)timeElapsed.Elapsed.Minutes * 55) / 60;
 			total *= (double)timeElapsed.Elapsed.Hours;
 			total += mul;
@@ -131,11 +131,12 @@ namespace Billar
 		}
 		public void SaveRegisterInDB()
 		{
+			/*Cliente GenericClient = new Cliente();
 			database.InsertTable(userEmployee, userClient, CalculateTimeElapsed(), float.Parse(CalculateCost().Substring(1)), methodPayment);
 			if (database.VerifyExistenceString(userClient, "CLAVE", "clientes"))
 			{
-				database.UpdateHrsClient(userClient, int.Parse(CalculateTimeElapsed().Substring(0, 2)));
-			}
-		}*/
+				GenericClient.updateCliente(userClient, int.Parse(CalculateTimeElapsed().Substring(0, 2)));
+			}*/
+		}
 	}
 }
