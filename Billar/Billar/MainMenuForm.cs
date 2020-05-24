@@ -57,6 +57,11 @@ namespace Billar
             myInventario.ShowDialog();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             ClientForm myClientForm = new ClientForm(this.name, this.id, this.type, this.password, this.username);

@@ -226,6 +226,7 @@
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbCode);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InventoryCrudForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.InventoryCrudForm_Load);

@@ -144,6 +144,7 @@
             this.Controls.Add(this.btnAgregarCli);
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClientForm";
             this.Text = "ClientForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

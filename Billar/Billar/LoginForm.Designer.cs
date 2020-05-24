@@ -86,12 +86,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(253, 450);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.textUser);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.Text = "Gestor de Billar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -595,6 +595,7 @@
             this.Controls.Add(this.pictureBoxAvailable);
             this.Controls.Add(this.buttonLeftTables);
             this.Controls.Add(this.button2RightTables);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TableForm";
             this.Text = "Mesas";
             this.groupBoxDiscounts.ResumeLayout(false);

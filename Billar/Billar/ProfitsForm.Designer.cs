@@ -132,6 +132,7 @@
             this.Controls.Add(this.button2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProfitsForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

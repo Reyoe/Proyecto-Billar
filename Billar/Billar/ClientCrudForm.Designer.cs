@@ -181,6 +181,7 @@
             this.Controls.Add(this.tbCode);
             this.Controls.Add(this.lbTitulo);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClientCrudForm";
             this.Text = "ClientCrudForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

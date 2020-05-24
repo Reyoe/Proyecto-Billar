@@ -100,7 +100,8 @@
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox17.Location = new System.Drawing.Point(215, 24);
+            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox17.Location = new System.Drawing.Point(242, 24);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(90, 70);
             this.pictureBox17.TabIndex = 27;
@@ -111,7 +112,7 @@
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.BackgroundImage")));
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox18.Location = new System.Drawing.Point(749, 24);
+            this.pictureBox18.Location = new System.Drawing.Point(734, 24);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(90, 70);
             this.pictureBox18.TabIndex = 28;
@@ -123,11 +124,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(291, 24);
+            this.label1.Location = new System.Drawing.Point(338, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 62);
+            this.label1.Size = new System.Drawing.Size(390, 62);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Bar \"El Filipino\"";
+            this.label1.Text = "Billarcito Pro";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -256,7 +258,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(924, 272);
+            this.label6.Location = new System.Drawing.Point(880, 272);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 20);
             this.label6.TabIndex = 40;
@@ -342,6 +344,7 @@
             this.Controls.Add(this.pictureBox3);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Green;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenuForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Menu Principal";

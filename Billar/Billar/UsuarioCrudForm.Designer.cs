@@ -231,6 +231,7 @@
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.tbCode);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UsuarioCrudForm";
             this.Text = "UsuarioCrudForm";
             this.Load += new System.EventHandler(this.UsuarioCrudForm_Load);
