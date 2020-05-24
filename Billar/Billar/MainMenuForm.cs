@@ -28,6 +28,14 @@ namespace Billar
             this.type = type;
             this.password = password;
             this.username = username;
+            database = new DataBase();
+
+            tables = new List<Table>();
+            for (int i = 1; i <= database.GetNumTables(); i++)
+            {
+                var table = new Table(i);
+                tables.Add(table);
+            }
 
         }
         private void MainMenu_Load(object sender, EventArgs e)
