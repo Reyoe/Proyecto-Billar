@@ -65,16 +65,17 @@ namespace Billar
             DataTable selectedUser = usuario.GetUsuario(textUser.Text, textPassword.Text);
             if (selectedUser.Rows.Count > 0)
             {
-                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString());
-                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][1].ToString());
-                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][2].ToString());
-                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][3].ToString());
-                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][4].ToString());
+
+                code=usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString();
+                username=usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][1].ToString();
+                password=usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][2].ToString();
+                name=usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][3].ToString();
+                type=usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][4].ToString();
                 textUser.Clear();
                 textPassword.Clear();
                 //UsuarioForm myUsuarioForm = new UsuarioForm();
                 
-                MainMenuForm menu = new MainMenuForm();
+                MainMenuForm menu = new MainMenuForm(name, code, type, password, username);
    
                 menu.ShowDialog();
                 
