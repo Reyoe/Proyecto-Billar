@@ -599,7 +599,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TableForm";
             this.Text = "Mesas";
-            this.Load += new System.EventHandler(this.TableForm_Load);
             this.groupBoxDiscounts.ResumeLayout(false);
             this.groupBoxDiscounts.PerformLayout();
             this.panel1.ResumeLayout(false);
