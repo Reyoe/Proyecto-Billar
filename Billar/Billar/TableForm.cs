@@ -12,9 +12,19 @@ namespace Billar
 {
     public partial class TableForm : Form
     {
+        string name, id, type, password, username;
         public TableForm()
         {
             InitializeComponent();
+        }
+        public TableForm(string name, string id, string type, string password, string username)
+        {
+            InitializeComponent();
+            this.name = name;
+            this.id = id;
+            this.type = type;
+            this.password = password;
+            this.username = username;
         }
     }
 }

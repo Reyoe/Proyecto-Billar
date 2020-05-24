@@ -32,11 +32,6 @@ namespace Billar
             this.type = type;
             this.password = password;
             this.username = username;
-            MessageBox.Show(this.id);
-            MessageBox.Show(this.username);
-            MessageBox.Show(this.password);
-            MessageBox.Show(this.name);
-            MessageBox.Show(this.type);
 
         }
 
