@@ -24,7 +24,7 @@ namespace Billar
             bd = "billar";
             password = "";
             //puerto = "3306";
-            Conexion.cadenadeconexion = "server=" + servidor + "; user=" + usuario + "; password=" + password + "; database=" + bd  + "; SslMode = none";
+            Conexion.cadenadeconexion = "server=" + servidor + "; user=" + usuario + "; password=" + password + "; database=" + bd  + "; SslMode = none; ";
         }
 
         static public void desconectar()
