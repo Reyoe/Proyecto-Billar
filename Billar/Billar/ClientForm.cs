@@ -12,10 +12,28 @@ namespace Billar
 {
     public partial class ClientForm : Form
     {
+        string name, id, type, password, username;
         public ClientForm()
         {
             InitializeComponent();
             dataGridView1.DataSource = Conexion.query("SELECT * FROM client");
+
+        }
+
+        public ClientForm(string name, string id, string type, string password, string username)
+        {
+            InitializeComponent();
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM client");
+            this.name = name;
+            this.id = id;
+            this.type = type;
+            this.password = password;
+            this.username = username;
+            MessageBox.Show(this.id);
+            MessageBox.Show(this.username);
+            MessageBox.Show(this.password);
+            MessageBox.Show(this.name);
+            MessageBox.Show(this.type);
 
         }
 

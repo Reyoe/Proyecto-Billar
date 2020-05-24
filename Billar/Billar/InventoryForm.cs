@@ -12,10 +12,25 @@ namespace Billar
 {
     public partial class InventoryForm : Form
     {
+        string name, id, type, password, username;
         public InventoryForm()
         {
             InitializeComponent();
+        }
+        public InventoryForm(string name, string id, string type, string password, string username)
+        {
+            InitializeComponent();
             dataGridView1.DataSource = Conexion.query("SELECT * FROM product");
+            this.name = name;
+            this.id = id;
+            this.type = type;
+            this.password = password;
+            this.username = username;
+            MessageBox.Show(this.id);
+            MessageBox.Show(this.username);
+            MessageBox.Show(this.password);
+            MessageBox.Show(this.name);
+            MessageBox.Show(this.type);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

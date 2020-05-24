@@ -45,7 +45,7 @@ namespace Billar
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            UsuarioForm myUsuarioForm = new UsuarioForm();
+            UsuarioForm myUsuarioForm = new UsuarioForm(this.name, this.id, this.type, this.password, this.username);
             myUsuarioForm.ShowDialog();
         }
 
@@ -57,13 +57,13 @@ namespace Billar
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            InventoryForm myInventario = new InventoryForm();
+            InventoryForm myInventario = new InventoryForm(this.name, this.id, this.type, this.password, this.username);
             myInventario.ShowDialog();
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            ClientForm myClientForm = new ClientForm();
+            ClientForm myClientForm = new ClientForm(this.name, this.id, this.type, this.password, this.username);
             myClientForm.ShowDialog();
         }
 
