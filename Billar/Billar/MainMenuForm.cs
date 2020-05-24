@@ -12,11 +12,21 @@ namespace Billar
 {
     public partial class MainMenuForm : Form
     {
+        string name, id, type, password, username;
         public MainMenuForm()
         {
             InitializeComponent();
         }
 
+        public MainMenuForm(string name, string id, string type, string password, string username)
+        {
+            InitializeComponent();
+            this.name = name;
+            this.id = id;
+            this.type = type;
+            this.password = password;
+            this.username = username;
+        }
         private void MainMenu_Load(object sender, EventArgs e)
         {
 

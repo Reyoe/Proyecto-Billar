@@ -61,10 +61,15 @@ namespace Billar
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            string code, name, username, password, type;
             DataTable selectedUser = usuario.GetUsuario(textUser.Text, textPassword.Text);
             if (selectedUser.Rows.Count > 0)
             {
                 Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString());
+                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[1][0].ToString());
+                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[2][0].ToString());
+                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[3][0].ToString());
+                Console.WriteLine(usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[4][0].ToString());
                 textUser.Clear();
                 textPassword.Clear();
                 //UsuarioForm myUsuarioForm = new UsuarioForm();
