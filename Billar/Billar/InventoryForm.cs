@@ -26,6 +26,18 @@ namespace Billar
             this.type = type;
             this.password = password;
             this.username = username;
+            if (this.type == "Empleado")
+            {
+                btAgregar.Enabled = false;
+                btModificar.Enabled = false;
+                btEliminar.Enabled = false;
+            }
+            else
+            {
+                btAgregar.Enabled = true;
+                btModificar.Enabled = true;
+                btEliminar.Enabled = true;
+            }
 
         }
 

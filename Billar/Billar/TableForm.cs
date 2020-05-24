@@ -12,18 +12,24 @@ namespace Billar
 {
     public partial class TableForm : Form
     {
+        private List<Table> tables;
+        private int indexTables;
+        private string userAdmin;
+        private DataBase database;
         string name, id, type, password, username;
 
-        private void TableForm_Load(object sender, EventArgs e)
-        {
 
+
+        private void checkBoxClient_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxClient.Enabled = checkBoxClient.Checked ? true : false;
         }
 
         public TableForm()
         {
             InitializeComponent();
         }
-        public TableForm(string name, string id, string type, string password, string username)
+        public TableForm(string name, string id, string type, string password, string username, ref List<Table> _tables)
         {
             InitializeComponent();
             this.name = name;
@@ -31,6 +37,18 @@ namespace Billar
             this.type = type;
             this.password = password;
             this.username = username;
+
+            database = new DataBase();
+            tables = _tables;
+            indexTables = 0;
+            if (this.type == "Administrador") {
+                groupBoxModTables.Visible |= true;
+            }
+            if (this.type == "Empleado")
+            {
+                groupBoxModTables.Visible |= false;
+            }
         }
+
     }
 }

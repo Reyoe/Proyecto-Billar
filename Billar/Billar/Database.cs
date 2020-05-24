@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Billar
 {
-    public class Database
+    public class DataBase
     {
 		private MySqlConnection conection = new MySqlConnection("server=localhost;password=;database=billar;User Id=root");
 		private MySqlDataReader read;
 		private MySqlCommand command;
 
-		/*public DataBase()
+		public DataBase()
 		{
 			command = new MySqlCommand();
-		}*/
+		}
 
 		public MySqlConnection OpenConnection()
 		{
