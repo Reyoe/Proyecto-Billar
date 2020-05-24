@@ -13,6 +13,8 @@ namespace Billar
     public partial class MainMenuForm : Form
     {
         string name, id, type, password, username;
+        private DataBase database;
+        List<Table> tables;
         public MainMenuForm()
         {
             InitializeComponent();
@@ -26,7 +28,13 @@ namespace Billar
             this.type = type;
             this.password = password;
             this.username = username;
-    
+            tables = new List<Table>();
+            for (int i = 1; i <= database.GetNumTables(); i++)
+            {
+                var table = new Table(i);
+                tables.Add(table);
+            }
+
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
