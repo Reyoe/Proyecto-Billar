@@ -17,14 +17,6 @@ namespace Billar
         private string userAdmin;
         private DataBase database;
         string name, id, type, password, username;
-
-
-
-        private void checkBoxClient_CheckedChanged(object sender, EventArgs e)
-        {
-            textBoxClient.Enabled = checkBoxClient.Checked ? true : false;
-        }
-
         public TableForm()
         {
             InitializeComponent();

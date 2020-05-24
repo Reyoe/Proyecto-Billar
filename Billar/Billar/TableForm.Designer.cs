@@ -342,7 +342,6 @@
             this.checkBoxClient.TabIndex = 19;
             this.checkBoxClient.Text = "Cliente Registrado:";
             this.checkBoxClient.UseVisualStyleBackColor = true;
-            this.checkBoxClient.CheckedChanged += new System.EventHandler(this.checkBoxClient_CheckedChanged);
             // 
             // label5
             // 
